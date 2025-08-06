@@ -1,0 +1,82 @@
+.signup-bg {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 2.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 2rem 0;
+}
+
+.signup-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+  word-break: break-word;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.signup-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.signup-label {
+  font-weight: 500;
+  color: #555;
+  text-align: left;
+}
+
+.signup-input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.signup-btn {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(90deg, #4f8cff 0%, #2355d8 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+@media (max-width: 600px) {
+  .signup-form input,
+  .signup-input {
+    font-size: 1rem !important;
+    padding: 0.7rem !important;
+  }
+  .app-title {
+    font-size: 1.5rem !important;
+  }
+}
